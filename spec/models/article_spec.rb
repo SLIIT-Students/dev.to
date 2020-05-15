@@ -663,7 +663,6 @@ RSpec.describe Article, type: :model do
       expect(article.cached_user.slug).to eq(article.user.username)
       expect(article.cached_user.profile_image_90).to eq(article.user.profile_image_90)
       expect(article.cached_user.profile_image_url).to eq(article.user.profile_image_url)
-      expect(article.cached_user.pro).to eq(article.user.pro?)
     end
 
     it "assigns cached_organization on save" do
